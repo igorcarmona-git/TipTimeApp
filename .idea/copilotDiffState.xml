@@ -12,15 +12,6 @@
             </PendingDiffInfo>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-              <option name="originalContent" value="&lt;resources&gt;&#10;    &lt;string name=&quot;app_name&quot;&gt;TipTimeApp&lt;/string&gt;&#10;    &lt;string name=&quot;cost_of_service_icon&quot;&gt;Cost of service icon&lt;/string&gt;&#10;    &lt;string name=&quot;cost_of_service&quot;&gt;Cost of Service&lt;/string&gt;&#10;    &lt;string name=&quot;service_question_icon&quot;&gt;Service question icon&lt;/string&gt;&#10;    &lt;string name=&quot;how_was_the_service&quot;&gt;How was the service?&lt;/string&gt;&#10;    &lt;string name=&quot;amazing_20&quot;&gt;Amazing (20%)&lt;/string&gt;&#10;    &lt;string name=&quot;tip_amount&quot;&gt;Tip Amount: %s&lt;/string&gt;&#10;    &lt;string name=&quot;good_18&quot;&gt;Good (18%)&lt;/string&gt;&#10;    &lt;string name=&quot;okay_15&quot;&gt;Okay (15%)&lt;/string&gt;&#10;    &lt;string name=&quot;round_up_tip&quot;&gt;Round up tip?&lt;/string&gt;&#10;    &lt;string name=&quot;bottom_round_up_option&quot;&gt;Bottom round up option&lt;/string&gt;&#10;    &lt;string name=&quot;calculate&quot;&gt;Calculate&lt;/string&gt;&#10;&lt;/resources&gt;" />
-              <option name="updatedContent" value="&lt;resources&gt;&#10;    &lt;string name=&quot;app_name&quot;&gt;TipTimeApp&lt;/string&gt;&#10;    &lt;string name=&quot;cost_of_service_icon&quot;&gt;Cost of service icon&lt;/string&gt;&#10;    &lt;string name=&quot;cost_of_service&quot;&gt;Cost of Service&lt;/string&gt;&#10;    &lt;string name=&quot;service_question_icon&quot;&gt;Service question icon&lt;/string&gt;&#10;    &lt;string name=&quot;how_was_the_service&quot;&gt;How was the service?&lt;/string&gt;&#10;    &lt;string name=&quot;amazing_20&quot;&gt;Amazing (20%)&lt;/string&gt;&#10;    &lt;string name=&quot;tip_amount&quot;&gt;Tip Amount: %s&lt;/string&gt;&#10;    &lt;string name=&quot;good_18&quot;&gt;Good (18%)&lt;/string&gt;&#10;    &lt;string name=&quot;okay_15&quot;&gt;Okay (15%)&lt;/string&gt;&#10;    &lt;string name=&quot;round_up_tip&quot;&gt;Round up tip?&lt;/string&gt;&#10;    &lt;string name=&quot;bottom_round_up_option&quot;&gt;Bottom round up option&lt;/string&gt;&#10;    &lt;string name=&quot;calculate&quot;&gt;Calculate&lt;/string&gt;&#10;    &lt;string name=&quot;invalid_cost_of_service&quot;&gt;Enter a valid service cost&lt;/string&gt;&#10;&lt;/resources&gt;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
       </map>
     </option>
   </component>

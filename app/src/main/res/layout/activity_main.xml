@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:hint="Cost of Service"
+        android:hint="@string/cost_of_service"
         app:layout_constraintStart_toEndOf="@+id/icon_cost_of_service"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -32,7 +32,6 @@
             android:id="@+id/etCostOfServiceInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="hint"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -40,6 +39,7 @@
         android:id="@+id/ic_service_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/how_was_the_service_icon"
         app:layout_constraintBottom_toBottomOf="@+id/tv_serviceQuestion"
         app:layout_constraintStart_toStartOf="@+id/icon_cost_of_service"
         app:layout_constraintTop_toTopOf="@+id/tv_serviceQuestion"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="How was the service?"
+        android:text="@string/how_was_the_service"
         app:layout_constraintStart_toStartOf="@+id/etCostOfService"
         app:layout_constraintTop_toBottomOf="@+id/etCostOfService" />
 
@@ -67,25 +67,26 @@
             android:id="@+id/option_twenty_percent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Amazing (20%)" />
+            android:text="@string/amazing_20" />
 
         <RadioButton
             android:id="@+id/option_eighteen_percent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Good (18%)" />
+            android:text="@string/good_18" />
 
         <RadioButton
             android:id="@+id/option_fifteen_percent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ok (15%)" />
+            android:text="@string/ok_15" />
     </RadioGroup>
 
     <ImageView
         android:id="@+id/ic_round_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/round_up_tip_icon"
         app:layout_constraintBottom_toBottomOf="@+id/switch_roundUp"
         app:layout_constraintStart_toStartOf="@+id/ic_service_question"
         app:layout_constraintTop_toTopOf="@+id/switch_roundUp"
@@ -98,7 +99,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:checked="true"
-        android:text="Round up tip?"
+        android:text="@string/round_up_tip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tipOptions"
         app:layout_constraintTop_toBottomOf="@+id/tipOptions" />
@@ -108,7 +109,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Calculate"
+        android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="@+id/switch_roundUp"
         app:layout_constraintStart_toStartOf="@+id/switch_roundUp"
         app:layout_constraintTop_toBottomOf="@+id/switch_roundUp" />
@@ -118,7 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Tip Amount $0.00"
+        android:text="@string/tip_amount"
         app:layout_constraintEnd_toEndOf="@+id/bt_calculate"
         app:layout_constraintTop_toBottomOf="@+id/bt_calculate" />
 
