@@ -23,35 +23,35 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.tipResult.text = "0.00"
-        binding.calculateButton.setOnClickListener {
-            calculateTip()
-        }
+//        binding.tipResult.text = "0.00"
+//        binding.calculateButton.setOnClickListener {
+//            calculateTip()
+//        }
     }
 
-    private fun calculateTip() {
-        // entries
-        val stringInTextField = binding.costOfService.text.toString()
-        val cost = stringInTextField.toDoubleOrNull() ?: return
-
-        val selectedID = binding.tipOption.checkedRadioButtonId
-        val isRoundUp = binding.roundUpSwitch.isChecked
-
-        // process
-        val tipPercentage = when (selectedID) {
-            R.id.option_twenty_percent -> 0.20
-            R.id.option_eighteen_percent -> 0.18
-            else -> 0.15
-        }
-
-        var tip = cost * tipPercentage
-
-        if(isRoundUp) {
-            tip = kotlin.math.ceil(tip)
-        }
-
-        // output
-        val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
-        binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
-    }
+//    private fun calculateTip() {
+//        // entries
+//        val stringInTextField = binding.costOfService.text.toString()
+//        val cost = stringInTextField.toDoubleOrNull() ?: return
+//
+//        val selectedID = binding.tipOption.checkedRadioButtonId
+//        val isRoundUp = binding.roundUpSwitch.isChecked
+//
+//        // process
+//        val tipPercentage = when (selectedID) {
+//            R.id.option_twenty_percent -> 0.20
+//            R.id.option_eighteen_percent -> 0.18
+//            else -> 0.15
+//        }
+//
+//        var tip = cost * tipPercentage
+//
+//        if(isRoundUp) {
+//            tip = kotlin.math.ceil(tip)
+//        }
+//
+//        // output
+//        val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
+//        binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
+//    }
 }

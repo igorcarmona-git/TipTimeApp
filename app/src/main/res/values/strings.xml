@@ -11,4 +11,5 @@
     <string name="round_up_tip">Round up tip?</string>
     <string name="bottom_round_up_option">Bottom round up option</string>
     <string name="calculate">Calculate</string>
+    <string name="invalid_cost_of_service">Enter a valid service cost</string>
 </resources>
