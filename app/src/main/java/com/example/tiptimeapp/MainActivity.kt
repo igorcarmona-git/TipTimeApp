@@ -26,17 +26,25 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.tipResult.text = "Tip Amount:"
+        // Checa se o estado salvo é nulo ou não, se for nulo, exibe o texto "Tip Amount:",
+        // caso contrário, exibe o valor salvo no estado
+        if (savedInstanceState == null) {
+            binding.tipResult.text = "Tip Amount:"
+        }else{
+            binding.tipResult.text = savedInstanceState.getString("tipResult")
+        }
+
         binding.btCalculate.setOnClickListener {
             calculateTip()
         }
+
     }
 
     private fun calculateTip() {
         // entries
         val stringInTextField = binding.etCostOfServiceInput.text.toString()
 
-        // ----------- Check if value is Null, if null return "?:" operator -----------------
+        // Checa se é valor nulo ou não, se for nulo "?:", retorna a função sem fazer nada
         val cost = stringInTextField.toDoubleOrNull() ?: return
 
         val selectedID = binding.tipOptions.checkedRadioButtonId
@@ -55,9 +63,16 @@ class MainActivity : AppCompatActivity() {
             tip = kotlin.math.ceil(tip)
         }
 
-        // output
-        // --------------  Format the local currency of the country set on device --------------
+        // ‘output’
+        // Formata o valor da ‘tip’ para o formato de moeda local, usando a classe NumberFormat
         val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
         binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
+    }
+
+    // Salva o estado da aplicação, nesse caso, se a tela rotacionar ele salva o valor
+    // do resultado no estado
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString("tipResult", binding.tipResult.text.toString())
     }
 }
