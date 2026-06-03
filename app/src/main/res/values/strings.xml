@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TipTimeApp</string>
+    <string name="app_name">SmartTIP</string>
     <string name="cost_of_service">Cost of Service</string>
     <string name="how_was_the_service_icon">How was the service icon</string>
     <string name="how_was_the_service">How was the service?</string>
